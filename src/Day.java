@@ -8,13 +8,13 @@ public class Day {
 
     private int month;
 
-    private int year ;
+    private int year;
 
-    private  String task;
+    private String task;
 
 
     //constructor
-    public Day(){
+    public Day() {
 
         Calendar c = new GregorianCalendar();
         System.out.print(c.getTime());
@@ -23,8 +23,7 @@ public class Day {
 
 
     //set the assigned task
-    public void setTask(){
-
+    public void setTask() {
 
 
         System.out.println("Enter the task : ");
@@ -36,7 +35,7 @@ public class Day {
     }
 
     // set the  day for the assigned task
-    public void setDayOfWeek(){
+    public void setDayOfWeek() {
 
         System.out.println("Enter the number from 1 to 7 to represent a day:");
 
@@ -44,26 +43,25 @@ public class Day {
 
         int x = input.nextInt();
 
-        if (x>=1 && x<=7){
+        if (x >= 1 && x <= 7) {
             dayOfWeek = DayOfWeek.of(x);
             System.out.println(dayOfWeek.name());
-        }
-        else{
+        } else {
             System.out.print("Invalid input");
         }
 
     }
 
     //set the month for assigned task
-    public void setMonth(){
+    public void setMonth() {
 
         System.out.println("Enter the number from 1 to 12 to represent a month:");
 
         Scanner input = new Scanner(System.in);
 
-        int month =  input.nextInt();
+        int month = input.nextInt();
 
-        switch (month){
+        switch (month) {
 
             case 1:
                 System.out.println("January");
@@ -120,7 +118,7 @@ public class Day {
     }
 
     //set the year for assigned task
-    public void setYear(){
+    public void setYear() {
 
         System.out.println("Enter year");
 
@@ -130,3 +128,20 @@ public class Day {
         System.out.println(year);
 
     }
+
+    //get the year
+    public int getYear(){
+        return year;
+    }
+
+    //get the month
+    public int getMonth(){
+        return month;
+    }
+
+    //get the assigned task for the day
+    public String getTask(){
+        return task;
+    }
+
+}
