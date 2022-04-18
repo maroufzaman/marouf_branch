@@ -2,9 +2,9 @@ import java.time.DayOfWeek;
 import java.util.*;
 
 public class Day {
+
     // declare variables
     private DayOfWeek dayOfWeek;
-
 
     private int month;
 
