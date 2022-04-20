@@ -12,6 +12,7 @@ public class Day {
 
     private String task;
 
+    private boolean done = false;
 
     //constructor
     public Day() {
@@ -21,8 +22,17 @@ public class Day {
 
     }
 
+    public Day(int x , String y ){
+        dayOfWeek = DayOfWeek.of(x);
+        task = y;
 
-    //set the assigned task
+        Calendar c = new GregorianCalendar();
+        System.out.print(c.getTime());
+
+    }
+
+
+    //set the assigned task for the day
     public void setTask() {
 
 
@@ -129,6 +139,11 @@ public class Day {
 
     }
 
+    //set the done to true or false  for assigned task
+    public void setDone(boolean x){
+        done = x;
+    }
+
     //get the year
     public int getYear(){
         return year;
@@ -142,6 +157,11 @@ public class Day {
     //get the assigned task for the day
     public String getTask(){
         return task;
+    }
+
+    //cheek whether the assigned task is done
+    public boolean isDone(){
+        return done;
     }
 
 }
