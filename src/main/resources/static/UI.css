@@ -306,6 +306,14 @@ span {
 }
 
 .task-details {
+    width: 90%;
+
+    margin-right: 5px;
+
+}
+
+.task-details-text {
+    word-wrap: normal;
 
     font-size: 2vh;
     font-family: Poppins, serif;
