@@ -1,6 +1,6 @@
 package com.rmrfroot.tasktracker222.Drills;
 
-import com.rmrfroot.tasktracker222.Day;
+import com.rmrfroot.tasktracker222.entities.Day;
 
 import javax.persistence.*;
 
