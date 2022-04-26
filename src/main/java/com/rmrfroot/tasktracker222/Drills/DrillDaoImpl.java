@@ -1,14 +1,14 @@
 package com.rmrfroot.tasktracker222.Drills;
 
-import com.rmrfroot.tasktracker222.Entity.Day;
+
+import com.rmrfroot.tasktracker222.entities.Day;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.annotation.PostConstruct;
 import javax.sql.DataSource;
 import java.util.List;
-import java.util.Map;
 
-public class DrillDaoImple implements DrillDao {
+public class DrillDaoImpl implements DrillDao {
 
     private Drill drill;
     private List<Drill> drillList;
@@ -16,8 +16,6 @@ public class DrillDaoImple implements DrillDao {
 
     @Autowired
     DataSource dataSource;
-
-
 
 
     @PostConstruct
@@ -38,8 +36,9 @@ public class DrillDaoImple implements DrillDao {
     }
 
     @Override
-    public Drill findByDay(Day day) {
-        return null;
+    public List<Drill> findByDay(Day day) {
+        sql = "SELECT drill FROM drills Where drill_day";
+        return drillList;
     }
 
     @Override

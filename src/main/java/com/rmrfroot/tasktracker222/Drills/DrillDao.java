@@ -1,7 +1,7 @@
 package com.rmrfroot.tasktracker222.Drills;
 
-import com.rmrfroot.tasktracker222.Entity.Day;
-import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.rmrfroot.tasktracker222.entities.Day;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ public interface DrillDao  {
 
     public Drill findById(int id);
 
-    public Drill findByDay(Day day);
+    public List<Drill> findByDay(Day day);
 
     public Object save(Drill drill);
 
