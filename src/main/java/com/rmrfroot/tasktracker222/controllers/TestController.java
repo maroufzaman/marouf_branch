@@ -4,7 +4,7 @@
         and screenshot sent by Amrin (thanks Amrin)
 */
 
-package com.rmrfroot.tasktracker222;
+package com.rmrfroot.tasktracker222.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
