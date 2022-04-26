@@ -1,4 +1,4 @@
-package com.rmrfroot.tasktracker222.Controller;
+package com.rmrfroot.tasktracker222.controllers;
 
 
 import org.springframework.stereotype.Controller;
