@@ -1,4 +1,3 @@
-
 import java.util.*;
 public class Task {
 
@@ -13,9 +12,10 @@ public class Task {
     private String evaluation_current_assignment;
     private String evaluation_past_assignment;
     private String evaluation_past_past_assignment;
-
+    private int priority;
     private String timeline_info;
-
+    private String additional_detail;
+    private String feedback;
 
 //constructor
     public Task(){
@@ -123,8 +123,6 @@ public class Task {
         return evaluation_past_past_assignment;
     }
 
-
-
     //set timeline info for the assignment
     public void setTimeline_info(String timeline_info) {
         this.timeline_info = timeline_info;
@@ -133,5 +131,39 @@ public class Task {
     //get the timeline info for the assignment
     public String getTimeline_info() {
         return timeline_info;
+    }
+
+    //set the priority of the task object
+    public void setPriority() {
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Number 1 will represent higher priority and Number 2 will represent lower priority");
+        System.out.println("Enter 1 or 2 to determine the priority of the task");
+        priority = input.nextInt();
+    }
+
+    //get Priority
+    public int getPriority() {
+        return priority;
+    }
+
+    //set additional detail for the assignment
+    public void setAdditional_detail(String additional_detail) {
+        this.additional_detail = additional_detail;
+    }
+
+    //get additional detail for the assignment
+    public String getAdditional_detail() {
+        return additional_detail;
+    }
+
+//set feedback for the assignment
+    public void setFeedback(String feedback) {
+        this.feedback = feedback;
+    }
+
+    //get feedback for the assignment
+    public String getFeedback() {
+        return feedback;
     }
 }
