@@ -22,14 +22,26 @@ public class Task {
         completion = false;
     }
 
-
+     //set the training
     public void setTraining(String training) {
         this.training = training;
     }
 
+    // get the training
     public String getTraining() {
         return training;
     }
+
+    //set the evaluation for the current assignment
+    public void setEvaluation_current_assignment(String evaluation_current_assignment) {
+        this.evaluation_current_assignment = evaluation_current_assignment;
+    }
+
+    //get the evaluation for the current assignment
+    public String getEvaluation_current_assignment() {
+        return evaluation_current_assignment;
+    }
+
 
 
 

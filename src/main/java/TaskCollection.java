@@ -9,17 +9,18 @@ public class TaskCollection {
 
     //constructor
     public TaskCollection(){
-        index = 0;
+
     }
 
     //add a Task object to the collection
 public void addTask(Task t){
         task.add(t);
-        index++;
+
 }
 
 //remove the Task object
-public void removeTask(){
+public void removeTask(Task t){
+      index =  task.indexOf(t);
         task.remove(index);
 }
 
@@ -27,7 +28,7 @@ public void removeTask(){
 public void setPriority(){
 
         Scanner input = new Scanner(System.in);
-        System.out.println("Numeber 1 will represent higher priority and Number 2 will represent lower priority");
+        System.out.println("Number 1 will represent higher priority and Number 2 will represent lower priority");
         System.out.println("Enter 1 or 2 to determine the priority of the task");
         priority =  input.nextInt();
 }
@@ -47,7 +48,7 @@ public void clearAll(){
         task.clear();
 }
 
-//check whether their is a task object
+//check whether their is a  task object
 public boolean containsTask(Task t){
        return task.contains(t);
 }
@@ -57,6 +58,10 @@ public Task getTask(){
      return  task.get(index);
 }
 
+//Check whether the TaskCollection is empty
+public boolean isEmpty(){
+        return  task.isEmpty();
+}
 
 
 }
