@@ -3,7 +3,7 @@ import java.util.*;
 public class TaskCollection {
 
     //declare variables
-    private List<Task> taskCollection = new ArrayList<Task>();
+    private final List<Task> taskCollection = new ArrayList<Task>();
 
     private int index;
 
@@ -24,19 +24,17 @@ public class TaskCollection {
         taskCollection.remove(i);
     }
 
-
-
     //get the number of Task object
     public int size() {
         return taskCollection.size();
     }
 
     //clear all Task object
-    public void clearAll() {
+    public void removeAll() {
         taskCollection.clear();
     }
 
-    //check whether there is a  task object
+    //check whether the given task object is in the taskCollection
     public boolean containsTask(Task task) {
         return taskCollection.contains(task);
     }
@@ -50,8 +48,5 @@ public class TaskCollection {
     public boolean isEmpty() {
         return taskCollection.isEmpty();
     }
-
-
-
 
 }

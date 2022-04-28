@@ -16,6 +16,8 @@ public class Task {
     private String timeline_info;
     private String additional_detail;
     private String feedback;
+    private Date deadline;
+
 
 //constructor
     public Task(){
@@ -157,7 +159,7 @@ public class Task {
         return additional_detail;
     }
 
-//set feedback for the assignment
+    //set feedback for the assignment
     public void setFeedback(String feedback) {
         this.feedback = feedback;
     }
@@ -166,4 +168,16 @@ public class Task {
     public String getFeedback() {
         return feedback;
     }
+
+    //set the deadline for the assignment
+    public void setDeadline(Date deadline) {
+        this.deadline = deadline;
+    }
+
+    //get the deadline for the assignment
+    public Date getDeadline() {
+        return deadline;
+    }
+
+
 }
