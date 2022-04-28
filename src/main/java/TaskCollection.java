@@ -20,8 +20,10 @@ public class TaskCollection {
 
     //remove the Task object
     public void removeTask(Task task) {
-      int  i = taskCollection.indexOf(task);
-        taskCollection.remove(i);
+      if (containsTask(task)){
+          int  i = taskCollection.indexOf(task);
+          taskCollection.remove(i);
+      }
     }
 
     //get the number of Task object
