@@ -1,17 +1,17 @@
 package com.rmrfroot.tasktracker222.controllers;
 
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class TaskTrackerController {
+public class DrillSchedulerController {
 
-    //get task collection singleton
+    //get day collection singleton
 
-    @GetMapping("/task-tracker-recipient")
-    public String taskTrackerRecipient(Model model){
-        return "TaskTracker";
+    @GetMapping("/drill-schedule-recipient")
+    public String drillScheduleRecipient(Model model){
+        return "DrillScheduler";
     }
+
 }
