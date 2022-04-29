@@ -3,13 +3,14 @@ import java.util.*;
 public class TaskCollection {
 
     //declare variables
-    private final List<Task> taskCollection = new ArrayList<Task>();
+    private final List<Task> taskCollection ;
 
     private int index;
 
     //constructor
     public TaskCollection() {
-            index = 0;
+        taskCollection= new ArrayList<Task>();
+        index = 0;
     }
 
     //add a Task object to the collection
@@ -31,7 +32,7 @@ public class TaskCollection {
         return taskCollection.size();
     }
 
-    //clear all Task object
+    //remove all Task object
     public void removeAll() {
         taskCollection.clear();
     }
