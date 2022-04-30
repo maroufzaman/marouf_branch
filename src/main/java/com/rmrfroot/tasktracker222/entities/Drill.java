@@ -2,6 +2,7 @@ package com.rmrfroot.tasktracker222.entities;
 
 import javax.persistence.*;
 
+//Drill object class
 @Entity
 @Table(name="drills")
 public class Drill {

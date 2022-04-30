@@ -4,10 +4,13 @@ package com.rmrfroot.tasktracker222.services;
 import com.rmrfroot.tasktracker222.dao.DrillDAO;
 import com.rmrfroot.tasktracker222.entities.Drill;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+//drill dao implementation
+@Service
 public class DrillDaoImpl implements DrillDaoService{
 
     @Autowired
