@@ -17,14 +17,24 @@ public class Task {
     private String timeline_info_personal;
     private String additional_detail;
     private String feedback;
-    private Date deadline;
-    private Date start_Assignement;
+    private Date deadline_conus_assignment;
+    private Date deadline_oconus_assignment;
+    private Date deadline_base_preference_assingment;
+    private Date suspenses_ancillary_training;
+    private Date suspenses_upgrade_training;
+    private Date suspense_continuation_training;
+    private Date start_conus_assignement_;
+    private Date start_oconus_assingment;
+    private Date start_base_preference_assignment;
+    private Date start_ancillary_training;
+    private Date start_upgrade_training;
+    private Date start_continuation_training;
     private String milestone;
 
 
 //constructor
     public Task(){
-
+      //initializes completion to false
         completion = false;
     }
 
@@ -259,31 +269,10 @@ public class Task {
 
 
 
-
-    //set the deadline for the assignment
-    public void setDeadline(Date deadline) {
-        this.deadline = deadline;
-    }
-
-
-
-
-
-    //get the deadline for the assignment
-    public Date getDeadline() {
-        return deadline;
-    }
-
-
-
-
-
     //set timeline info personal
     public void setTimeline_info_personal(String timeline_info_personal) {
         this.timeline_info_personal = timeline_info_personal;
     }
-
-
 
 
 
@@ -295,32 +284,10 @@ public class Task {
 
 
 
-
-    //set start date for the assignment
-    public void setStart_Assignement(Date start_Assignement) {
-        this.start_Assignement = start_Assignement;
-    }
-
-
-
-
-
-
-    //get the start date for the assignment
-    public Date getStart_Assignement() {
-        return start_Assignement;
-    }
-
-
-
-
-
-
     //set milestone
     public void setMilestone(String milestone) {
         this.milestone = milestone;
     }
-
 
 
 
@@ -336,5 +303,190 @@ public class Task {
 
 
 
+//set the deadline for base preference assignment
+    public void setDeadline_base_preference_assingment(Date deadline_base_preference_assingment) {
+        this.deadline_base_preference_assingment = deadline_base_preference_assingment;
+    }
 
+
+
+
+
+    //get the deadline for base preference assignment
+    public Date getDeadline_base_preference_assingment() {
+        return deadline_base_preference_assingment;
+    }
+
+
+
+
+    //set the deadline for conus assignement
+    public void setDeadline_conus_assignment(Date deadline_conus_assignment) {
+        this.deadline_conus_assignment = deadline_conus_assignment;
+    }
+
+
+
+
+
+    //get the deadline for conus assignment
+    public Date getDeadline_conus_assignment() {
+        return deadline_conus_assignment;
+    }
+
+
+
+
+
+    //set the deadilne for oconus assignemtn
+    public void setDeadline_oconus_assignment(Date deadline_oconus_assignment) {
+        this.deadline_oconus_assignment = deadline_oconus_assignment;
+    }
+
+
+
+
+    //get the deadline for oconus assignment
+    public Date getDeadline_oconus_assignment() {
+        return deadline_oconus_assignment;
+    }
+
+
+
+    //set the start date for base preference assignment
+    public void setStart_base_preference_assignment(Date start_base_preference_assignment) {
+        this.start_base_preference_assignment = start_base_preference_assignment;
+    }
+
+
+
+
+//get the start date for base preference assignment
+    public Date getStart_base_preference_assignment() {
+        return start_base_preference_assignment;
+    }
+
+
+
+    //set the start date for conus assignment
+    public void setStart_conus_assignement_(Date start_conus_assignement_) {
+        this.start_conus_assignement_ = start_conus_assignement_;
+    }
+
+
+
+
+    //get start date for conus assignment
+    public Date getStart_conus_assignement_() {
+        return start_conus_assignement_;
+    }
+
+
+
+
+
+    //set the start date for oconus assignment
+    public void setStart_oconus_assingment(Date start_oconus_assingment) {
+        this.start_oconus_assingment = start_oconus_assingment;
+    }
+
+
+
+
+
+
+    //get the start date for oconus assignent
+    public Date getStart_oconus_assingment() {
+        return start_oconus_assingment;
+    }
+
+
+
+
+    //set the start date for ancillary training
+    public void setStart_ancillary_training(Date start_ancillary_training) {
+        this.start_ancillary_training = start_ancillary_training;
+    }
+
+
+
+
+    //get the start Date for ancillary training
+    public Date getStart_ancillary_training() {
+        return start_ancillary_training;
+    }
+
+
+
+    //set the start date for upgrade training
+    public void setStart_upgrade_training(Date start_upgrade_training) {
+        this.start_upgrade_training = start_upgrade_training;
+    }
+
+
+
+    //get the start date for upgrade training
+    public Date getStart_upgrade_training() {
+        return start_upgrade_training;
+    }
+
+
+
+    // set the start date for continuation training
+    public void setStart_continuation_training(Date start_continuation_training) {
+        this.start_continuation_training = start_continuation_training;
+    }
+
+
+
+
+
+    //get the start date for continuation training
+    public Date getStart_continuation_training() {
+        return start_continuation_training;
+    }
+
+
+
+    // set the suspense date for ancillary training
+    public void setSuspenses_ancillary_training(Date suspenses_ancillary_training) {
+        this.suspenses_ancillary_training = suspenses_ancillary_training;
+    }
+
+
+
+
+    //get the suspense date for ancillary training
+    public Date getSuspenses_ancillary_training() {
+        return suspenses_ancillary_training;
+    }
+
+
+
+    //set the suspense date for upgrade training
+    public void setSuspenses_upgrade_training(Date suspenses_upgrade_training) {
+        this.suspenses_upgrade_training = suspenses_upgrade_training;
+    }
+
+
+
+    //get the suspense date for upgrade training
+    public Date getSuspenses_upgrade_training() {
+        return suspenses_upgrade_training;
+    }
+
+
+
+    //set the suspense date for continuation training
+    public void setSuspense_continuation_training(Date suspense_continuation_training) {
+        this.suspense_continuation_training = suspense_continuation_training;
+    }
+
+
+
+
+    //get the suspense date for continuation training
+    public Date getSuspense_continuation_training() {
+        return suspense_continuation_training;
+    }
 }

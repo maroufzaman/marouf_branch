@@ -10,10 +10,12 @@ public class TaskCollection {
     //constructor
     public TaskCollection() {
         taskCollection= new ArrayList<Task>();
+
+        //initializes the index to 0
         index = 0;
     }
 
-    //add a Task object to the collection
+    //add a Task object to the Collection
     public void addTask(Task task) {
         taskCollection.add(task);
           index++;
