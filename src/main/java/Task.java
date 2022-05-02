@@ -19,9 +19,9 @@ public class Task {
     private String feedback;
     private Date deadline_conus_assignment;
     private Date deadline_oconus_assignment;
-    private Date deadline_base_preference_assingment;
-    private Date suspenses_ancillary_training;
-    private Date suspenses_upgrade_training;
+    private Date deadline_base_preference_assignment;
+    private Date suspense_ancillary_training;
+    private Date suspense_upgrade_training;
     private Date suspense_continuation_training;
     private Date start_conus_assignement_;
     private Date start_oconus_assingment;
@@ -304,8 +304,8 @@ public class Task {
 
 
 //set the deadline for base preference assignment
-    public void setDeadline_base_preference_assingment(Date deadline_base_preference_assingment) {
-        this.deadline_base_preference_assingment = deadline_base_preference_assingment;
+    public void setDeadline_base_preference_assignment(Date deadline_base_preference_assignment) {
+        this.deadline_base_preference_assignment = deadline_base_preference_assignment;
     }
 
 
@@ -313,8 +313,8 @@ public class Task {
 
 
     //get the deadline for base preference assignment
-    public Date getDeadline_base_preference_assingment() {
-        return deadline_base_preference_assingment;
+    public Date getDeadline_base_preference_assignment() {
+        return deadline_base_preference_assignment;
     }
 
 
@@ -338,7 +338,7 @@ public class Task {
 
 
 
-    //set the deadilne for oconus assignemtn
+    //set the deadilne for oconus assignment
     public void setDeadline_oconus_assignment(Date deadline_oconus_assignment) {
         this.deadline_oconus_assignment = deadline_oconus_assignment;
     }
@@ -449,30 +449,30 @@ public class Task {
 
 
     // set the suspense date for ancillary training
-    public void setSuspenses_ancillary_training(Date suspenses_ancillary_training) {
-        this.suspenses_ancillary_training = suspenses_ancillary_training;
+    public void setSuspense_ancillary_training(Date suspense_ancillary_training) {
+        this.suspense_ancillary_training = suspense_ancillary_training;
     }
 
 
 
 
     //get the suspense date for ancillary training
-    public Date getSuspenses_ancillary_training() {
-        return suspenses_ancillary_training;
+    public Date getSuspense_ancillary_training() {
+        return suspense_ancillary_training;
     }
 
 
 
     //set the suspense date for upgrade training
-    public void setSuspenses_upgrade_training(Date suspenses_upgrade_training) {
-        this.suspenses_upgrade_training = suspenses_upgrade_training;
+    public void setSuspense_upgrade_training(Date suspense_upgrade_training) {
+        this.suspense_upgrade_training = suspense_upgrade_training;
     }
 
 
 
     //get the suspense date for upgrade training
-    public Date getSuspenses_upgrade_training() {
-        return suspenses_upgrade_training;
+    public Date getSuspense_upgrade_training() {
+        return suspense_upgrade_training;
     }
 
 
