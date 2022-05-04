@@ -71,9 +71,13 @@ public class DrillDaoImpl implements DrillDaoService{
             //drill not found
             throw new RuntimeException("Did not find drill id - " + id);
         }
-        updatedDrill.setDrillName(drill.getDrillName());
+        updatedDrill.setTitle(drill.getTitle());
         updatedDrill.setStartDate(drill.getStartDate());
         updatedDrill.setDeadlineDate(drill.getDeadlineDate());
+        updatedDrill.setLocation(drill.getLocation());
+        updatedDrill.setOfficerName(drill.getOfficerName());
+        updatedDrill.setOfficerEmail(drill.getOfficerEmail());
+        updatedDrill.setNote(drill.getNote());
         drillDAO.save(updatedDrill);
         return updatedDrill;
     }
