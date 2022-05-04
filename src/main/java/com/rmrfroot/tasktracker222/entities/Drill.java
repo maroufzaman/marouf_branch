@@ -1,6 +1,7 @@
 package com.rmrfroot.tasktracker222.entities;
 
 import javax.persistence.*;
+import java.util.Date;
 
 //Drill object class
 @Entity
@@ -15,16 +16,31 @@ public class Drill {
     @Column(name="drill_name")
     private String drillName;
 
-    public Drill(){}
+    @Column(name="start_date")
+    private Date startDate;
 
-    public Drill(String drillName) {
+    @Column(name="deadline_date")
+    private Date deadlineDate;
+
+
+
+    public Drill(String drillName, Date startDate, Date deadlineDate) {
         this.drillName = drillName;
+        this.startDate = startDate;
+        this.deadlineDate = deadlineDate;
+    }
+
+    public Drill() {
+
     }
 
     public void setId(int id){this.id = id;}
 
     public void setDrillName(String drillName){this.drillName = drillName;}
 
+    public void setStartDate(Date startDate){this.startDate =  startDate;}
+
+    public void setDeadlineDate(Date deadlineDate){this.deadlineDate = deadlineDate;}
     public int getId() {
         return id;
     }
@@ -32,6 +48,10 @@ public class Drill {
     public String getDrillName() {
         return drillName;
     }
+
+    public Date getStartDate(){return startDate;}
+
+    public Date getDeadlineDate(){return deadlineDate;}
 
 }
 

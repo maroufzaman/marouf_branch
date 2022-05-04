@@ -1,14 +1,14 @@
 import java.time.DayOfWeek;
 import java.util.*;
 
-public class Day implement Comparable{
+public class Day implements Comparable{
 
     // declare variables
     private DayOfWeek dayOfWeek;
 
     private String name;
 
-    private int age
+    private int age;
 
     private int month;
 
@@ -163,19 +163,19 @@ public class Day implement Comparable{
     public int compareTo(Day other){
 
         if (year < other.getYear())
-            return -1
+            return -1;
         else if (year == other.getYear()){
 
             if (month < other.getMonth())
-                return -1
+                return -1;
              else if (month  == other.getMonth()){
 
-                if (dayOfWeek < other.getDayOfWeek())
-                    return -1'
-                else if (dayOfWeek  == other.getDayOfWeek())
-                    return 0;
-                else if ( dayOfWeek > other.getDayOfWeek())
-                    return 1;
+                if (dayOfWeek < other.getDayOfWeek()){
+                    return -1;}
+                else if (dayOfWeek  == other.getDayOfWeek()){
+                    return 0;}
+                else if ( dayOfWeek > other.getDayOfWeek()){
+                    return 1;}
 
             }
 

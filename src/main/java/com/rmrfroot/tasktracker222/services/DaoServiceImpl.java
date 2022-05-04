@@ -35,8 +35,9 @@ public class DaoServiceImpl implements DaoService {
     }
 
     @Override
-    public void save(Day day) {
+    public Day save(Day day) {
         daysDAO.save(day);
+        return day;
     }
 
     @Override
