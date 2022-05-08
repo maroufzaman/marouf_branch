@@ -10,7 +10,7 @@ public interface DaoService {
 
     public Day findById(int theId);
 
-    public void save(Day day);
+    public Day save(Day day);
 
     public void deleteById(int theId);
 }
