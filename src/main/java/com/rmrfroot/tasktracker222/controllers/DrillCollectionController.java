@@ -34,7 +34,6 @@ public class DrillCollectionController {
         return "drillCollection";
     }
 
-
     @GetMapping("/{id}")
     public ResponseEntity<Drill> findById(@PathVariable("id") int id) {
         return new ResponseEntity<>(drillDaoService.findById(id), HttpStatus.OK);
@@ -57,6 +56,4 @@ public class DrillCollectionController {
     public void deleteById(@PathVariable("id") int id) {
         drillDaoService.deleteById(id);
     }
-
-
 }

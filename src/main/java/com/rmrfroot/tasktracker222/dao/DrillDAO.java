@@ -5,9 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 
-
 //drill repository interface
 @Repository
 public interface DrillDAO extends JpaRepository<Drill,Integer> {
-
 }

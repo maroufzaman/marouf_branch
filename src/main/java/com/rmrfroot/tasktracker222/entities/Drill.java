@@ -46,7 +46,6 @@ public class Drill {
     }
 
     public Drill() {
-
     }
 
     public void setId(int id){this.id = id;}
@@ -83,7 +82,5 @@ public class Drill {
     public String getOfficerEmail(){return officerEmail;}
 
     public String getNote(){return note;}
-
-
 }
 
