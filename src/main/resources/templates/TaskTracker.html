@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="UI.css">
     <script src="https://kit.fontawesome.com/a665c629bb.js" crossorigin="anonymous"></script>
 </head>
-<body class="body-container">
+<body class="body-container" onload="initBody()">
 
 <div class="main-container">
 
@@ -38,13 +38,25 @@
             <div class="task-list">
 
                 <!-- Task List Item -->
+                <div th:each="task : ${tasks}" class="task-item"
+                     th:onclick="'javascript:updateSelectedTask(' + ${task.id} + ');'" th:id="'task-' + ${task.id}">
+                    <label class="container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <div class="task-item-text-div">
+                        <span th:text="${task.getTitle()}" class="task-item-title"></span>
+                        <span th:text="${task.getDueDateString()}" class="task-item-text">Task Due Date</span>
+                    </div>
+                </div>
+
                 <div class="task-item">
                     <label class="container">
                         <input type="checkbox">
                         <span class="checkmark"></span>
                     </label>
                     <div class="task-item-text-div">
-                        <span class="task-item-title">Task Title 1</span>
+                        <span class="task-item-title">Placeholder 1</span>
                         <span class="task-item-text">Task Due Date</span>
                     </div>
                 </div>
@@ -54,7 +66,7 @@
                         <span class="checkmark"></span>
                     </label>
                     <div class="task-item-text-div">
-                        <span class="task-item-title">Task Title 2</span>
+                        <span class="task-item-title">Placeholder 2</span>
                         <span class="task-item-text">Task Due Date</span>
                     </div>
                 </div>
@@ -64,7 +76,7 @@
                         <span class="checkmark"></span>
                     </label>
                     <div class="task-item-text-div">
-                        <span class="task-item-title">Task Title 3</span>
+                        <span class="task-item-title">Placeholder 3</span>
                         <span class="task-item-text">Task Due Date</span>
                     </div>
                 </div>
@@ -74,7 +86,7 @@
                         <span class="checkmark"></span>
                     </label>
                     <div class="task-item-text-div">
-                        <span class="task-item-title">Task Title 4</span>
+                        <span class="task-item-title">Placeholder 4</span>
                         <span class="task-item-text">Task Due Date</span>
                     </div>
                 </div>
@@ -84,7 +96,7 @@
                         <span class="checkmark"></span>
                     </label>
                     <div class="task-item-text-div">
-                        <span class="task-item-title">Task Title 5</span>
+                        <span class="task-item-title">Placeholder 5</span>
                         <span class="task-item-text">Task Due Date</span>
                     </div>
                 </div>
@@ -94,7 +106,7 @@
                         <span class="checkmark"></span>
                     </label>
                     <div class="task-item-text-div">
-                        <span class="task-item-title">Task Title 6</span>
+                        <span class="task-item-title">Placeholder 6</span>
                         <span class="task-item-text">Task Due Date</span>
                     </div>
                 </div>
@@ -104,7 +116,7 @@
                         <span class="checkmark"></span>
                     </label>
                     <div class="task-item-text-div">
-                        <span class="task-item-title">Task Title 7</span>
+                        <span class="task-item-title">Placeholder 7</span>
                         <span class="task-item-text">Task Due Date</span>
                     </div>
                 </div>
@@ -114,7 +126,7 @@
                         <span class="checkmark"></span>
                     </label>
                     <div class="task-item-text-div">
-                        <span class="task-item-title">Task Title 8</span>
+                        <span class="task-item-title">Placeholder 8</span>
                         <span class="task-item-text">Task Due Date</span>
                     </div>
                 </div>
@@ -124,7 +136,7 @@
                         <span class="checkmark"></span>
                     </label>
                     <div class="task-item-text-div">
-                        <span class="task-item-title">Task Title 9</span>
+                        <span class="task-item-title">Placeholder 9</span>
                         <span class="task-item-text">Task Due Date</span>
                     </div>
                 </div>
@@ -134,7 +146,7 @@
                         <span class="checkmark"></span>
                     </label>
                     <div class="task-item-text-div">
-                        <span class="task-item-title">Task Title 10</span>
+                        <span class="task-item-title">Placeholder 10</span>
                         <span class="task-item-text">Task Due Date</span>
                     </div>
                 </div>
@@ -146,11 +158,9 @@
                 <!-- Task Title Bar-->
                 <div class="task-expanded-info-bar">
                     <div class="task-expanded-info-text">
-                        <span class="task-expanded-title">Task Title 1</span>
-                        <span class="task-requirements-due-text">Due on 26 April 2022</span>
+                        <span id="selected-task-title" class="task-expanded-title">Task Title 1</span>
+                        <span id="selected-task-deadline" class="task-requirements-due-text">Due on 26 April 2022</span>
                         <span class="task-requirements-due-text">Must be submitted as a PDF</span>
-                        <div class="task-requirements-due">
-                        </div>
                     </div>
 
                     <div class="task-submit-button-div">
@@ -161,8 +171,14 @@
                 <!-- Task Details -->
                 <div class="task-details">
 
-                    <p>The main objective of this task is to do this, this, and this. Here, have some placeholder text.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet neque auctor, pulvinar dolor eget, facilisis ante. Quisque vel nisl aliquam purus blandit eleifend. Sed ac diam nulla. Fusce vestibulum tempor libero, eu suscipit velit vulputate non. Ut arcu ex, vehicula vel ornare sit amet, viverra eu mauris. Nunc dignissim, elit nec pretium volutpat, augue nisi mollis ante, auctor sollicitudin magna eros bibendum lectus. Maecenas et ligula id metus porta pulvinar. Ut ornare fringilla dolor eget elementum. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    <p id="selected-task-details">The main objective of this task is to do this, this, and this. Here, have some placeholder text.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet neque auctor, pulvinar
+                        dolor eget, facilisis ante. Quisque vel nisl aliquam purus blandit eleifend. Sed ac diam nulla.
+                        Fusce vestibulum tempor libero, eu suscipit velit vulputate non. Ut arcu ex, vehicula vel ornare
+                        sit amet, viverra eu mauris. Nunc dignissim, elit nec pretium volutpat, augue nisi mollis ante,
+                        auctor sollicitudin magna eros bibendum lectus. Maecenas et ligula id metus porta pulvinar. Ut
+                        ornare fringilla dolor eget elementum. Interdum et malesuada fames ac ante ipsum primis in
+                        faucibus.</p>
 
                 </div>
 
@@ -176,9 +192,49 @@
 
 </body>
 
-<script>
+<script th:inline="javascript">
+    let selectedTask = null;
+    let taskList = new Map();
 
+    function initBody(){
+        populateTasks();
+        updateInitialTask(1);
+    }
 
+    function populateTasks() {
+        let tasks = [[${tasks}]];
+
+        while(tasks.length > 0){
+            let taskToAdd = tasks.pop();
+            taskList.set(taskToAdd.id, taskToAdd);
+
+            selectedTask = taskToAdd;
+        }
+    }
+
+    function updateSelectedTask(id){
+        if(selectedTask.id === id)
+            return;
+
+        let previousSelectedTaskID = selectedTask.id;
+        document.getElementById("task-" + id).style.backgroundColor = "#ececec";
+
+        selectedTask = taskList.get(id);
+
+        document.getElementById("task-" + previousSelectedTaskID).style.backgroundColor = "unset";
+        document.getElementById("selected-task-title").innerText = selectedTask.title;
+        document.getElementById("selected-task-deadline").innerText = "Due on " + selectedTask.dueDateString;
+        document.getElementById("selected-task-details").innerText = selectedTask.description;
+    }
+
+    function updateInitialTask(id){
+        selectedTask = taskList.get(id);
+
+        document.getElementById("task-" + id).style.backgroundColor = "#f5f5f5";
+        document.getElementById("selected-task-title").innerText = selectedTask.title;
+        document.getElementById("selected-task-deadline").innerText = "Due on " + selectedTask.dueDateString;
+        document.getElementById("selected-task-details").innerText = selectedTask.description;
+    }
 </script>
 
 </html>
