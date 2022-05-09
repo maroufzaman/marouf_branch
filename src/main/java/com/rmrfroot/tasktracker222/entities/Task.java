@@ -2,6 +2,7 @@ package com.rmrfroot.tasktracker222.entities;
 
 
 import javax.persistence.*;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @Entity
@@ -34,6 +35,8 @@ public class Task {
     @Column(name="note")
     private String note;
 
+    private String dueDateString;
+
     public Task() {
     }
 
@@ -46,6 +49,8 @@ public class Task {
         this.startDate = startDate;
         this.deadlineDate = deadlineDate;
         this.note = note;
+
+        getDueDateString();
     }
 
     public int getId() {
@@ -102,6 +107,13 @@ public class Task {
 
     public void setNote(String note) {
         this.note = note;
+    }
+
+    public String getDueDateString(){
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM-dd-YYYY");
+
+        this.dueDateString = simpleDateFormat.format(getDeadlineDate());
+        return dueDateString;
     }
 }
 
