@@ -1,6 +1,7 @@
 import java.util.*;
 public class Task {
 
+
     //declare variables
     private String  conus_assignment;
     private String  oconus_assignment;

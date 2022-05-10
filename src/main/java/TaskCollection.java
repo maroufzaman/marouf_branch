@@ -3,6 +3,7 @@ import java.util.*;
 public class TaskCollection {
 
     //declare variables
+
     private final List<Task> taskCollection ;
 
     private int index;
