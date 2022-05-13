@@ -47,11 +47,20 @@ Finally the Career Planner + Work Journal which will have personal career-relate
 ![Screen Shot 2022-05-13 at 2 18 38 AM](https://user-images.githubusercontent.com/48699772/168252863-6f17d1bd-5ece-4864-9535-3e76327733ff.png)
  ######
 
+**Milestones:** 
+
+Completed as of 5/13/22 - Task recipient view; Task objects; Task database.
+######
+**Projected completion dates:**
+
 9/19/22 - Scheduler recipient view; Scheduler database; Integrate scheduler database with dynamic updater; Training recipient view; Scheduler main menu view; Training manager view; Task manager view; Scheduler dynamic update; Scheduler manager view.
 
 10/3/22 - Task completion statistics view; Training database. 
 
 10/17/22 - Career tracker user view; Work journal user view; Certificate submission.
+
+10/31/22 - Performance review requirement viewer; Promotion eligibility checker; Login/Authentication; Documentation.
+
  ######
 
 **Testing and Deployment Instructions:**
