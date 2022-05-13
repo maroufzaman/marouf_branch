@@ -1,39 +1,44 @@
-Project:TaskTracker222
+Project: TaskTracker222
 
 Team Name: rm rf root
 
-T DEVELOPMENT TEAM - rm rf root
-Name: Amrin Sandhar	                                                                                            Name: Anish Gautam
+Team Members and Contact Info:
 
-Email address: amrinsandhar@csus.edu	                                                                        Email address: agautam@csus.edu 
+Name: Amrin Sandhar
+Email address: amrinsandhar@csus.edu
+Phone number: (916) 996-7359
 
-Phone number: (916) 996-7359	                                                                                 Phone number: (530) 383-3267
+Name: Anish Gautam
+Email address: agautam@csus.edu 
+Phone number: (530) 383-3267
+	                                                                                 
+Name: Noel Paulite
+Email address: npaulite@csus.edu
+Phone number: (510) 509-5739
 
-Name: Noel Paulite	                                                                                                    Name: Michelle Chan
+Name: Michelle Chan
+Email address: mchan@csus.edu
+Phone number: (916) 896-4096	                                                                                  
+                                                                                     
+Name: Visoth Cheam
+Email address: vcheam@csus.edu
+Phone number: (916) 547-6256
 
-Email address: npaulite@csus.edu	                                                                                  Email address: mchan@csus.edu
+Name: Tobechi Maduchukwu
+Email address: tmaduchukwu@csus.edu
+Phone number: (916) 533-4601	                                                                                
 
-Phone number: (510) 509-5739	                                                                                     Phone number: (916) 896-4096
+Name: Brian Frey	                                                                                      
+Email address: brianfrey@csus.edu
+Phone number: (916) 705-2987
 
-Name: Visoth Cheam	                                                                                                Name: Tobechi Maduchukwu
-
-Email address:	 vcheam@csus.edu	                                                                                Email address: tmaduchukwu@csus.edu
-
-Phone number: (916) 547-6256	                                                                                      Phone number: (916) 533-4601
-
-Name: Marouf Zaman	                                                                                                     Name: Brian Frey
-
-Email address: maroufzaman@csus.edu	                                                                                Email address: brianfrey@csus.edu
-
-Phone number: (209) 420-4595	                                                                                         Phone number: (916) 705-2987
-
-
-Synopsis: Building a web app with following features such as Drill Scheduler, Task Tracker, Career tracker and work journal. First is the drill scheduler which will Dynamically update calendar Customizable event and time views
-Second is the task tracker which will have Task creation and viewing Features with a priority system
-like task with higher priority will be at the top
-Finally the Career Planner + Work Journal which will have Personal career-related  to-do list and the   Ability to log activities and tag others
+Name: Marouf Zaman	                                                                                                     
+Email address: maroufzaman@csus.edu	                                                                                
+Phone number: (209) 420-4595	                                                                                         
 
 
+Synopsis: 
+Building a web app with following features such as Drill Scheduler, Task Tracker, Career Tracker and Work Journal. First, is the drill scheduler which will dynamically update calendar customizable event and time views. Second, is the task tracker which will have task creation and viewing Features with a priority system like task with higher priority will be at the top. Finally the Career Planner + Work Journal which will have Personal career-related to-do list and the ability to log activities and tag others.
 
 
 
@@ -58,7 +63,7 @@ UL mockup images
 
 10/3/22 - Task completion statistics view; Training database. 
 
-	10/17/22 - Career tracker user view; Work journal user view; Certificate submission.
+10/17/22 - Career tracker user view; Work journal user view; Certificate submission.
 
 
 Testing and Deployment Instructions:
