@@ -33,21 +33,35 @@ Our web app will have the following features:
 ![image](https://cdn.discordapp.com/attachments/838556017024303184/974672412421521429/unknown.png)
 
 
+
 ## Milestones
-Completed as of 5/13/22 - Task recipient view; Task objects; Task database.
+### Completed
+Task recipient view, task data storage objects, data access objects, task database.
 
+### 9/19/22
+Finish scheduler recipient view, manager view, and connect to database.
 
-## Projected completion dates
-9/19/22 - Scheduler recipient view; Scheduler database; Integrate scheduler database with dynamic updater; Training recipient view; Scheduler main menu view; Training manager view; Task manager view; Scheduler dynamic update; Scheduler manager view.
+### 10/3/22
+Complete main menu view, task manager view, and task completion statistics view.
+Begin work on training recipient view.
 
-10/3/22 - Task completion statistics view; Training database. 
+### 10/17/22
+Finish training manager view and career tracker / work journal views.
 
-10/17/22 - Career tracker user view; Work journal user view; Certificate submission.
-
-10/31/22 - Performance review requirement viewer; Promotion eligibility checker; Login/Authentication; Documentation.
-
+###10/31/22
+Create viewer for performance review requirements and eligibility for promotion.
+Tie up loose ends, finish documentation, authentication.
 
 ## Testing and Deployment Instructions
-Our project will be hosted and tested on AWS services. 
+Our project will be hosted and tested on AWS services.
 
 More detailed instructions on how to deploy app and test it coming soon as we continue in development and make a first iteration of the full product.
+
+Unit tests will be written in the future as directed by course instruction.
+
+### Things to come
+![image](https://cdn.discordapp.com/attachments/960772694427705374/974686360558518292/unknown.png)
+![image](https://cdn.discordapp.com/attachments/960772694427705374/974686435779178566/unknown.png)
+![image](https://cdn.discordapp.com/attachments/960772694427705374/974686929452957737/unknown.png)
+![image](https://cdn.discordapp.com/attachments/960772694427705374/974686603706527744/unknown.png)
+
