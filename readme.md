@@ -1,4 +1,23 @@
-#Task Tracker 222
+Project:TaskTracker222
+Team Name: rm rf root
+
+T DEVELOPMENT TEAM - rm rf root
+Name: Amrin Sandhar	                                   Name: Anish Gautam
+Email address: amrinsandhar@csus.edu	                 Email address: agautam@csus.edu 
+Phone number: (916) 996-7359	                         Phone number: (530) 383-3267
+
+Name: Noel Paulite	                                     Name: Michelle Chan
+Email address: npaulite@csus.edu	                       Email address: mchan@csus.edu
+Phone number: (510) 509-5739	                           Phone number: (916) 896-4096
+
+Name: Visoth Cheam	                                      Name: Tobechi Maduchukwu
+Email address:	 vcheam@csus.edu	                        Email address: tmaduchukwu@csus.edu
+Phone number: (916) 547-6256	                               Phone number: (916) 533-4601
+
+Name: Marouf Zaman	                                          Name: Brian Frey
+Email address: maroufzaman@csus.edu	                       Email address: brianfrey@csus.edu
+Phone number: (209) 420-4595	                                Phone number: (916) 705-2987
+
 
 Synopsis: Building a web app with following features such as Drill Scheduler, Task Tracker, Career tracker and work journal. First is the drill scheduler which will Dynamically update calendar Customizable event and time views
 Second is the task tracker which will have Task creation and viewing Features with a priority system
