@@ -13,14 +13,16 @@ Finally the Career Planner + Work Journal which will have Personal career-relate
 https://cdn.discordapp.com/attachments/965132157234323567/967247908430831636/jj.pdf
 
 
-Our logo   ![image](https://user-images.githubusercontent.com/89886230/168223960-0ce34a0d-0319-42be-94f4-76105e996345.png)
+Our logo         ![image](https://user-images.githubusercontent.com/89886230/168223960-0ce34a0d-0319-42be-94f4-76105e996345.png)
 
 ERD is given below:
 ![image](https://user-images.githubusercontent.com/89886230/168222967-ad21e2c5-63ba-471c-802f-0987c99c180d.png)
 ![image](https://user-images.githubusercontent.com/89886230/168223084-682de4a3-1d0b-4cc0-8640-ce51c179695d.png)
 
 
-UL mockup images is given below:
+UL mockup images 
+
+
 ![image](https://user-images.githubusercontent.com/89886230/168223729-d9a2f1b5-34e5-4b19-9dae-4f9059478957.png)
 
 
