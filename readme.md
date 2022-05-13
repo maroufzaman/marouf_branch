@@ -1,8 +1,8 @@
-Project: TaskTracker222
+**Project:** TaskTracker222
 
-Team Name: rm rf root
+**Team Name:** rm rf root
 
-Team Members and Contact Info:
+**Team Members and Contact Info:**
 
 Amrin Sandhar, amrinsandhar@csus.edu, (916) 996-7359
 
@@ -21,7 +21,7 @@ Brian Frey, brianfrey@csus.edu, (916) 705-2987
 Marouf Zaman, maroufzaman@csus.edu, (209) 420-4595	                                                                                         
 
 
-Synopsis:
+**Synopsis:**
 
 Our web app will have the following features: 
 
@@ -32,16 +32,16 @@ Second, is the task tracker which will have task creation and viewing features w
 Finally the Career Planner + Work Journal which will have personal career-related to-do list and the ability to log activities and tag others.
 
 
-Our app logo:
+**Logo:**
 
 ![image](https://www.195wg.ang.af.mil/portals/54/222%20ISS.png)
 
-Our current ERD:
+**ERD:**
 ![image](https://user-images.githubusercontent.com/89886230/168222967-ad21e2c5-63ba-471c-802f-0987c99c180d.png)
 ![image](https://user-images.githubusercontent.com/89886230/168223084-682de4a3-1d0b-4cc0-8640-ce51c179695d.png)
 
 
-User Interface Prototypes:
+**User Interface Prototypes:**
 ![Screen Shot 2022-05-13 at 2 17 11 AM](https://user-images.githubusercontent.com/48699772/168252627-dd0988f0-8faf-481b-a604-c369ddd0e550.png)
 ![Screen Shot 2022-05-13 at 2 18 00 AM](https://user-images.githubusercontent.com/48699772/168252770-5c6bad00-f490-4e2c-99db-1d115b419f4c.png)
 ![Screen Shot 2022-05-13 at 2 18 38 AM](https://user-images.githubusercontent.com/48699772/168252863-6f17d1bd-5ece-4864-9535-3e76327733ff.png)
@@ -54,7 +54,7 @@ User Interface Prototypes:
 10/17/22 - Career tracker user view; Work journal user view; Certificate submission.
 
 
-Testing and Deployment Instructions:
+**Testing and Deployment Instructions:**
 
 Our project will be hosted and tested on AWS services. 
 
