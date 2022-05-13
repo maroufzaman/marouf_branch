@@ -24,14 +24,13 @@ Our web app will have the following features:
 
 
 ## ERD
-![image](https://user-images.githubusercontent.com/89886230/168222967-ad21e2c5-63ba-471c-802f-0987c99c180d.png)
-![image](https://user-images.githubusercontent.com/89886230/168223084-682de4a3-1d0b-4cc0-8640-ce51c179695d.png)
+![image](https://cdn.discordapp.com/attachments/838556017024303184/974666882680520735/ERD.png)
 
 
 ## User Interface Prototype
-![Screen Shot 2022-05-13 at 2 17 11 AM](https://user-images.githubusercontent.com/48699772/168252627-dd0988f0-8faf-481b-a604-c369ddd0e550.png)
-![Screen Shot 2022-05-13 at 2 18 00 AM](https://user-images.githubusercontent.com/48699772/168252770-5c6bad00-f490-4e2c-99db-1d115b419f4c.png)
-![Screen Shot 2022-05-13 at 2 18 38 AM](https://user-images.githubusercontent.com/48699772/168252863-6f17d1bd-5ece-4864-9535-3e76327733ff.png)
+![image](https://cdn.discordapp.com/attachments/838556017024303184/974672283228573716/unknown.png)
+![image](https://cdn.discordapp.com/attachments/838556017024303184/974672339704889414/unknown.png)
+![image](https://cdn.discordapp.com/attachments/838556017024303184/974672412421521429/unknown.png)
 
 
 ## Milestones
