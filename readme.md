@@ -61,6 +61,8 @@ UL mockup images
 	10/17/22 - Career tracker user view; Work journal user view; Certificate submission.
 
 
+Testing and Deployment Instructions:
+Our project will be hosted and tested on AWS services. We will have more instructions on how exactly we will deploy our app and test it as we continue in development and have a complete first version of the product.
 
 
 
