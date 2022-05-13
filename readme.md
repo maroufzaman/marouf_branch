@@ -54,6 +54,11 @@ UL mockup images
 ![image](https://user-images.githubusercontent.com/89886230/168223729-d9a2f1b5-34e5-4b19-9dae-4f9059478957.png)
 
 
+9/19/22 - Scheduler recipient view; Scheduler database; Integrate scheduler database with dynamic updater; Training recipient view; Scheduler main menu view; Training manager view; Task manager view; Scheduler dynamic update; Scheduler manager view.
+
+10/3/22 - Task completion statistics view; Training database. 
+
+	10/17/22 - Career tracker user view; Work journal user view; Certificate submission.
 
 
 
