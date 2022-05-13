@@ -14,12 +14,12 @@ Marouf Zaman, maroufzaman@csus.edu, (209) 420-4595
 
 ## Project Synopsis
 Our web app will have the following features:
-* First, is the drill scheduler which will dynamically update customizable calendar event and time views.
-* Second, is the task tracker which will have task creation and viewing features with a priority system like task with higher priority will be at the top.
-* Finally, the Career Planner + Work Journal which will have personal career-related to-do list and the ability to log activities and tag others.
+* First, a drill scheduler, which will feature a dynamically updating calendar with customizable views of time frames and event details
+* Second, a task tracker featuring task creation and viewing with a priority system, racking higher-priority tasks at the top
+* And finally, a career planner and work journal to log any personal, career-related to-do's and activities
 
 
-## Logo
+## Client Logo
 ![image](https://www.195wg.ang.af.mil/portals/54/222%20ISS.png)
 
 
