@@ -48,7 +48,7 @@ Begin work on training recipient view.
 ### 10/17/22
 Finish training manager view and career tracker / work journal views.
 
-###10/31/22
+### 10/31/22
 Create viewer for performance review requirements and eligibility for promotion.
 Tie up loose ends, finish documentation, authentication.
 
