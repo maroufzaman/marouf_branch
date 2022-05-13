@@ -4,40 +4,25 @@ Team Name: rm rf root
 
 Team Members and Contact Info:
 
-Name: Amrin Sandhar
-Email address: amrinsandhar@csus.edu
-Phone number: (916) 996-7359
+Amrin Sandhar, amrinsandhar@csus.edu, (916) 996-7359
 
-Name: Anish Gautam
-Email address: agautam@csus.edu 
-Phone number: (530) 383-3267
+Anish Gautam, agautam@csus.edu, (530) 383-3267
 	                                                                                 
-Name: Noel Paulite
-Email address: npaulite@csus.edu
-Phone number: (510) 509-5739
+Noel Paulite, npaulite@csus.edu, (510) 509-5739
 
-Name: Michelle Chan
-Email address: mchan@csus.edu
-Phone number: (916) 896-4096	                                                                                  
+Michelle Chan, mchan@csus.edu, (916) 896-4096	                                                                                  
                                                                                      
-Name: Visoth Cheam
-Email address: vcheam@csus.edu
-Phone number: (916) 547-6256
+Visoth Cheam, vcheam@csus.edu, (916) 547-6256
 
-Name: Tobechi Maduchukwu
-Email address: tmaduchukwu@csus.edu
-Phone number: (916) 533-4601	                                                                                
+Tobechi Maduchukwu, tmaduchukwu@csus.edu, (916) 533-4601	                                                                                
 
-Name: Brian Frey	                                                                                      
-Email address: brianfrey@csus.edu
-Phone number: (916) 705-2987
+Brian Frey, brianfrey@csus.edu, (916) 705-2987
 
-Name: Marouf Zaman	                                                                                                     
-Email address: maroufzaman@csus.edu	                                                                                
-Phone number: (209) 420-4595	                                                                                         
+Marouf Zaman, maroufzaman@csus.edu, (209) 420-4595	                                                                                         
 
 
-Synopsis: 
+Synopsis:
+
 Our web app will have the following features: 
 
 First, is the drill scheduler which will dynamically update customizable calendar event and time views.
@@ -47,20 +32,19 @@ Second, is the task tracker which will have task creation and viewing features w
 Finally the Career Planner + Work Journal which will have personal career-related to-do list and the ability to log activities and tag others.
 
 
-https://cdn.discordapp.com/attachments/965132157234323567/967247908430831636/jj.pdf
+Our app logo:
 
+![image](https://www.195wg.ang.af.mil/portals/54/222%20ISS.png)
 
-Our logo         ![image](https://user-images.githubusercontent.com/89886230/168223960-0ce34a0d-0319-42be-94f4-76105e996345.png)
-
-ERD is given below:
+Our current ERD:
 ![image](https://user-images.githubusercontent.com/89886230/168222967-ad21e2c5-63ba-471c-802f-0987c99c180d.png)
 ![image](https://user-images.githubusercontent.com/89886230/168223084-682de4a3-1d0b-4cc0-8640-ce51c179695d.png)
 
 
-UL mockup images 
-
-
-![image](https://user-images.githubusercontent.com/89886230/168223729-d9a2f1b5-34e5-4b19-9dae-4f9059478957.png)
+User Interface Prototypes:
+![Screen Shot 2022-05-13 at 2 17 11 AM](https://user-images.githubusercontent.com/48699772/168252627-dd0988f0-8faf-481b-a604-c369ddd0e550.png)
+![Screen Shot 2022-05-13 at 2 18 00 AM](https://user-images.githubusercontent.com/48699772/168252770-5c6bad00-f490-4e2c-99db-1d115b419f4c.png)
+![Screen Shot 2022-05-13 at 2 18 38 AM](https://user-images.githubusercontent.com/48699772/168252863-6f17d1bd-5ece-4864-9535-3e76327733ff.png)
 
 
 9/19/22 - Scheduler recipient view; Scheduler database; Integrate scheduler database with dynamic updater; Training recipient view; Scheduler main menu view; Training manager view; Task manager view; Scheduler dynamic update; Scheduler manager view.
@@ -71,4 +55,7 @@ UL mockup images
 
 
 Testing and Deployment Instructions:
-Our project will be hosted and tested on AWS services. We will have more instructions on how exactly we will deploy our app and test it as we continue in development and have a complete first version of the product.
+
+Our project will be hosted and tested on AWS services. 
+
+More detailed instructions on how to deploy app and test it coming soon as we continue in development and make a first iteration of the full product.
