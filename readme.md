@@ -38,9 +38,13 @@ Phone number: (209) 420-4595
 
 
 Synopsis: 
-Building a web app with following features such as Drill Scheduler, Task Tracker, Career Tracker and Work Journal. First, is the drill scheduler which will dynamically update calendar customizable event and time views. Second, is the task tracker which will have task creation and viewing Features with a priority system like task with higher priority will be at the top. Finally the Career Planner + Work Journal which will have Personal career-related to-do list and the ability to log activities and tag others.
+Our web app will have the following features: 
 
+First, is the drill scheduler which will dynamically update customizable calendar event and time views.
 
+Second, is the task tracker which will have task creation and viewing features with a priority system like task with higher priority will be at the top.
+
+Finally the Career Planner + Work Journal which will have personal career-related to-do list and the ability to log activities and tag others.
 
 
 https://cdn.discordapp.com/attachments/965132157234323567/967247908430831636/jj.pdf
@@ -68,7 +72,3 @@ UL mockup images
 
 Testing and Deployment Instructions:
 Our project will be hosted and tested on AWS services. We will have more instructions on how exactly we will deploy our app and test it as we continue in development and have a complete first version of the product.
-
-
-
-
