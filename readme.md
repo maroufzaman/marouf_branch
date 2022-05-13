@@ -2,14 +2,14 @@
 ### Team Name: rm rf root
 
 ## Team Members and Contact Info 
-Amrin Sandhar, amrinsandhar@csus.edu, (916) 996-7359
-Anish Gautam, agautam@csus.edu, (530) 383-3267
-Noel Paulite, npaulite@csus.edu, (510) 509-5739
-Michelle Chan, mchan@csus.edu, (916) 896-4096
-Visoth Cheam, vcheam@csus.edu, (916) 547-6256
-Tobechi Maduchukwu, tmaduchukwu@csus.edu, (916) 533-4601
-Brian Frey, brianfrey@csus.edu, (916) 705-2987
-Marouf Zaman, maroufzaman@csus.edu, (209) 420-4595
+Amrin Sandhar, amrinsandhar@csus.edu, (916) 996-7359  
+Anish Gautam, agautam@csus.edu, (530) 383-3267  
+Noel Paulite, npaulite@csus.edu, (510) 509-5739  
+Michelle Chan, mchan@csus.edu, (916) 896-4096  
+Visoth Cheam, vcheam@csus.edu, (916) 547-6256  
+Tobechi Maduchukwu, tmaduchukwu@csus.edu, (916) 533-4601  
+Brian Frey, brianfrey@csus.edu, (916) 705-2987  
+Marouf Zaman, maroufzaman@csus.edu, (209) 420-4595  
 
 
 ## Project Synopsis
