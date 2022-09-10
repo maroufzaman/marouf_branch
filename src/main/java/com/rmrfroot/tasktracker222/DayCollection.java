@@ -6,6 +6,7 @@ import java.util.*;
 public class DayCollection {
 
     //array? lists? queues? or hash?
+
     private List<Day> dayCollection;
 
 

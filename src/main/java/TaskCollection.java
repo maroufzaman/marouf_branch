@@ -26,6 +26,7 @@ public class TaskCollection {
     public void removeTask(Task task) {
       if (containsTask(task)){
           int  i = taskCollection.indexOf(task);
+
           taskCollection.remove(i);
       }
     }
