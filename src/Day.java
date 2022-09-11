@@ -6,10 +6,6 @@ public class Day implement Comparable{
     // declare variables
     private DayOfWeek dayOfWeek;
 
-    private String name;
-
-    private int age
-
     private int month;
 
     private int year;
@@ -60,27 +56,7 @@ public class Day implement Comparable{
         this.year = year;
     }
 
-    //set the assigned task for the day
-    public void setTask(String task) {
-        this.task = task;
-    }
 
-
-
-    //set the done to true or false  for assigned task
-    public void setDone(boolean x){
-        done = x;
-    }
-
-    //set the name of the officer who is assigned to do the task
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    //set the officer age
-    public void setAge(int age) {
-        this.age = age;
-    }
 
     //get the year
     public int getYear(){
@@ -93,23 +69,10 @@ public class Day implement Comparable{
     }
 
 
-    //cheek whether the assigned task is done
-    public boolean isDone(){
-        return done;
-    }
 
     //get the day of week for the assigned task
     public DayOfWeek getDayOfWeek() {
         return dayOfWeek;
     }
 
-    //get the officer name assigned for the task
-    public String getName() {
-        return name;
-    }
-
-    //get the officer age
-    public int getAge() {
-        return age;
-    }
 }
