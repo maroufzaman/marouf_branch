@@ -44,7 +44,7 @@ span {
 }
 
 .context-container {
-    width: 100vw;
+    width: 95%;
     height: 90vh;
     margin: 0;
 
@@ -87,7 +87,7 @@ span {
 }
 
 .side-menu {
-    width: 8vw;
+    width: 32em;
     height: 100vh;
 
     display: flex;
@@ -139,8 +139,12 @@ span {
     color: #AEE583;
 }
 
+.side-menu a:hover {
+    opacity: 50%;
+}
+
 .task-list {
-    width: 20vw;
+    width: 30em;
     height: 100%;
 
     display: flex;
@@ -178,6 +182,86 @@ span {
     flex-wrap: wrap;
 
     border-bottom: solid #e1e1e1 2px;
+
+    cursor: pointer;
+}
+
+/* The container */
+.container {
+    display: block;
+    margin-right: 4%;
+    padding: 11.5% 5%;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 5px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+.task-item-text-div {
+    width: auto;
+    margin: 0;
+    padding: 5px;
+
+    display: flex;
+    align-content: flex-start;
+    justify-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .task-item-title {
@@ -210,14 +294,26 @@ span {
     flex-wrap: wrap;
 }
 
-.task-expanded-title-bar {
+.task-expanded-info-bar {
     width: 100%;
     height: 20vh;
     padding: 10px;
 
     display: flex;
-    align-content: center;
+    align-content: left;
     justify-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.task-expanded-info-text {
+    width: 55%;
+    height: available;
+    padding: 10px;
+
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
     flex-direction: column;
     flex-wrap: wrap;
 }
@@ -233,18 +329,6 @@ span {
     font-size: 5vh;
 
     font-family: Poppins, serif;
-}
-
-.task-expanded-info-submit-bar {
-    width: 100%;
-    height: available;
-    padding: 10px;
-
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .task-requirements-due {
@@ -272,38 +356,28 @@ span {
 
 .task-submit-button-div {
     width: 30%;
-    height: 100%;
+    height: 40%;
+    margin-top: 2em;
 
     display: flex;
     align-content: center;
     justify-content: center;
-
-    background-color: #A6D4FF;
 }
 
 .task-submit-button {
-    height: 80%;
-    width: max-content;
-    margin: 10px;
-
+    background-color: #269999;
     border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
     border-radius: 5px;
-
-    display: flex;
-    align-content: center;
-    justify-content: center;
-
-    font-family: Poppins, serif;
-
-    background-color: #00b7ff;
-
-}
-
-.task-submit-button-text {
 
     font-size: 3vh;
     font-family: Poppins, serif;
-}
+  }
 
 .task-details {
 
