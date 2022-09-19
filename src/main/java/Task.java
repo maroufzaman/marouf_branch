@@ -1,6 +1,7 @@
 import java.util.*;
 public class Task {
 
+
     //declare variables
     private String  conus_assignment;
     private String  oconus_assignment;
@@ -9,9 +10,7 @@ public class Task {
     private String upgrade_training;
     private String continuation_training;
     private boolean completion;
-    private String evaluation_current_assignment;
-    private String evaluation_past_assignment;
-    private String evaluation_past_past_assignment;
+
     private int priority;
     private String timeline_info_professional;
     private String timeline_info_personal;
@@ -30,6 +29,15 @@ public class Task {
     private Date start_upgrade_training;
     private Date start_continuation_training;
     private String milestone;
+    private String evaluation_current_assignment;
+    private String evaluation_past_assignment;
+    private String evaluation_past_past_assignment;
+    private String fitness_previous_score;
+    private String fitness_next_assessment;
+    private String fitness_goal;
+    private String objective;
+    private String evaluation_area_for_improvement;
+
 
 
 //constructor
@@ -146,53 +154,6 @@ public class Task {
     public boolean isCompletion() {
         return completion;
     }
-
-
-
-
-    //set the evaluation for the current assignment
-    public void setEvaluation_current_assignment(String evaluation_current_assignment) {
-        this.evaluation_current_assignment = evaluation_current_assignment;
-    }
-
-
-
-    //get the evaluation for the current assignment
-    public String getEvaluation_current_assignment() {
-        return evaluation_current_assignment;
-    }
-
-
-
-    //set the evaluation for past assignment
-    public void setEvaluation_past_assignment(String evaluation_past_assignment) {
-        this.evaluation_past_assignment = evaluation_past_assignment;
-    }
-
-
-
-
-//get the evaluation for past assignment
-    public String getEvaluation_past_assignment() {
-        return evaluation_past_assignment;
-    }
-
-
-
-//set the evaluation for assignment before the assignment
-    public void setEvaluation_past_past_assignment(String evaluation_past_past_assignment) {
-        this.evaluation_past_past_assignment = evaluation_past_past_assignment;
-    }
-
-
-
-
-    //get the evaluation for assignment before the past assignment
-    public String getEvaluation_past_past_assignment() {
-        return evaluation_past_past_assignment;
-    }
-
-
 
 
 
@@ -482,11 +443,113 @@ public class Task {
         this.suspense_continuation_training = suspense_continuation_training;
     }
 
-
-
-
     //get the suspense date for continuation training
     public Date getSuspense_continuation_training() {
         return suspense_continuation_training;
+    }
+
+
+
+//set evaluation for current assignment
+    public void setEvaluation_current_assignment(String evaluation_current_assignment) {
+        this.evaluation_current_assignment = evaluation_current_assignment;
+    }
+
+
+
+    //get the evaluation for the current assignment
+    public String getEvaluation_current_assignment() {
+        return evaluation_current_assignment;
+    }
+
+
+
+    //set the evaluation for past assignment
+    public void setEvaluation_past_assignment(String evaluation_past_assignment) {
+        this.evaluation_past_assignment = evaluation_past_assignment;
+    }
+
+
+
+
+    //get the evaluation for past assignment
+    public String getEvaluation_past_assignment() {
+        return evaluation_past_assignment;
+    }
+
+
+
+    //set the evaluation for assignment before the assignment
+    public void setEvaluation_past_past_assignment(String evaluation_past_past_assignment) {
+        this.evaluation_past_past_assignment = evaluation_past_past_assignment;
+    }
+
+
+
+
+    //get the evaluation for assignment before the past assignment
+    public String getEvaluation_past_past_assignment() {
+        return evaluation_past_past_assignment;
+    }
+
+//set priority for assignment
+    public void setPriority(int priority) {
+        this.priority = priority;
+    }
+
+//set fitness goal
+    public void setFitness_goal(String fitness_goal) {
+        this.fitness_goal = fitness_goal;
+    }
+
+//get fitness goal
+    public String getFitness_goal() {
+        return fitness_goal;
+    }
+
+
+    //set fitness previous score
+    public void setFitness_previous_score(String fitness_previous_score) {
+        this.fitness_previous_score = fitness_previous_score;
+    }
+
+
+    //get fitness previous score
+    public String getFitness_previous_score() {
+        return fitness_previous_score;
+    }
+
+
+    //set fitness next assessment
+    public void setFitness_next_assessment(String fitness_next_assessment) {
+        this.fitness_next_assessment = fitness_next_assessment;
+    }
+
+
+    //get fitness next assessment
+    public String getFitness_next_assessment() {
+        return fitness_next_assessment;
+    }
+
+    //set objective
+    public void setObjective(String objective) {
+        this.objective = objective;
+    }
+
+
+    //get objective
+    public String getObjective() {
+        return objective;
+    }
+
+//set evaluation area for improvement
+    public void setEvaluation_area_for_improvement(String evaluation_area_for_improvement) {
+        this.evaluation_area_for_improvement = evaluation_area_for_improvement;
+    }
+
+
+    //get evaluation area for improvement
+    public String getEvaluation_area_for_improvement() {
+        return evaluation_area_for_improvement;
     }
 }

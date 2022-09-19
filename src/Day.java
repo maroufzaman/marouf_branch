@@ -6,17 +6,20 @@ public class Day implements Comparable{
     // declare variables
     private DayOfWeek dayOfWeek;
 
+<<<<<<< HEAD
+=======
     private String name;
 
     private int age;
 
+>>>>>>> 2d349929eb0f86fe587ab034acab47b5639dbcf8
     private int month;
 
     private int year;
 
-    private String task;
 
-    public String training;
+
+
 
     private boolean done = false;
 
@@ -40,14 +43,12 @@ public class Day implements Comparable{
 
 
 
-    //set the assigned task to be completed for the day
-    public void setTask() {
 
 
-        System.out.println("Enter the task to be completed : ");
 
-        Scanner input = new Scanner(System.in);
 
+<<<<<<< HEAD
+=======
         task = input.nextLine();
 
     }
@@ -200,6 +201,7 @@ public class Day implements Comparable{
         System.out.println(year);
 
     }
+>>>>>>> 2d349929eb0f86fe587ab034acab47b5639dbcf8
 
     // set the  day for the assigned task
     public void setDayOfWeek(DayOfWeek dayOfWeek) {
@@ -216,30 +218,7 @@ public class Day implements Comparable{
         this.year = year;
     }
 
-    //set the assigned task for the day
-    public void setTask(String task) {
-        this.task = task;
-    }
 
-    //set the training for the day
-    public void setTraining(String training) {
-        this.training = training;
-    }
-
-    //set the done to true or false  for assigned task
-    public void setDone(boolean x){
-        done = x;
-    }
-
-    //set the name of the officer who is assigned to do the task
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    //set the officer age
-    public void setAge(int age) {
-        this.age = age;
-    }
 
     //get the year
     public int getYear(){
@@ -251,33 +230,11 @@ public class Day implements Comparable{
         return month;
     }
 
-    //get the assigned task for the day
-    public String getTask(){
-        return task;
-    }
 
-   //get the training for the day
-    public String getTraining() {
-        return training;
-    }
-
-    //cheek whether the assigned task is done
-    public boolean isDone(){
-        return done;
-    }
 
     //get the day of week for the assigned task
     public DayOfWeek getDayOfWeek() {
         return dayOfWeek;
     }
 
-    //get the officer name assigned for the task
-    public String getName() {
-        return name;
-    }
-
-    //get the officer age
-    public int getAge() {
-        return age;
-    }
 }

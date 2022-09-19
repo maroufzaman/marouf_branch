@@ -3,6 +3,7 @@ import java.util.*;
 public class TaskCollection {
 
     //declare variables
+
     private final List<Task> taskCollection ;
 
     private int index;
@@ -25,6 +26,7 @@ public class TaskCollection {
     public void removeTask(Task task) {
       if (containsTask(task)){
           int  i = taskCollection.indexOf(task);
+
           taskCollection.remove(i);
       }
     }
