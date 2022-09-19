@@ -1,6 +1,6 @@
-package com.rmrfroot.tasktracker222.Service;
+package com.rmrfroot.tasktracker222.services;
 
-import com.rmrfroot.tasktracker222.Entity.Day;
+import com.rmrfroot.tasktracker222.entities.Day;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ public interface DaoService {
 
     public Day findById(int theId);
 
-    public void save(Day day);
+    public Day save(Day day);
 
     public void deleteById(int theId);
 }

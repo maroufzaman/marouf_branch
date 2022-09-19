@@ -1,26 +1,18 @@
-package com.rmrfroot.tasktracker222;
-import java.util.*;
+package com.rmrfroot.tasktracker222.entities;
 
-//Generic implementation of a Collection
+import java.util.ArrayList;
+import java.util.List;
 
 public class DayCollection {
-
-    //array? lists? queues? or hash?
-
     private List<Day> dayCollection;
 
-
-    public DayCollection() {    //ArrayList
+    public DayCollection() {
         dayCollection = new ArrayList<>();
     }
 
     public void add(Day day) {
         dayCollection.add(day);
     }
-
-    //public void remove(Day day) {
-        //needs Day getters to implement
-    //}
 
     public int isEmpty() {
         if(dayCollection.size() == 0)
@@ -31,5 +23,4 @@ public class DayCollection {
     public int getSize() {
         return dayCollection.size();
     }
-
 }
