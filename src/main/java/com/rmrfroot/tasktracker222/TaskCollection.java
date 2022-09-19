@@ -1,4 +1,4 @@
-
+package com.rmrfroot.tasktracker222;
 import java.util.*;
 public class TaskCollection {
 
@@ -32,7 +32,7 @@ public class TaskCollection {
     }
 
     //get the number of Task object
-    public int size() {
+    public int getSize() {
         return taskCollection.size();
     }
 
