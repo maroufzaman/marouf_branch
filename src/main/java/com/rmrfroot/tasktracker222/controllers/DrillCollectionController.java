@@ -49,7 +49,7 @@ public class DrillCollectionController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Drill> update(@PathVariable("id") int id, @RequestBody Drill drill) {
-        return new ResponseEntity<>(drillDaoService.save(drill), HttpStatus.OK);
+        return new ResponseEntity<>(drillDaoService.update(id,drill), HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")
