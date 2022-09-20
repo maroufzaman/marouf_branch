@@ -1,4 +1,4 @@
-package com.rmrfroot.tasktracker222.Drills;
+package com.rmrfroot.tasktracker222.drills;
 
 
 import com.rmrfroot.tasktracker222.entities.Day;
