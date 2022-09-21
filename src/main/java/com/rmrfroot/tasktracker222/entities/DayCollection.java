@@ -23,4 +23,21 @@ public class DayCollection {
     public int getSize() {
         return dayCollection.size();
     }
+    
+    
+    //remove Day from DayCollection
+    public void remove(Day day) {
+       if (dayCollection.contains(day)){
+           int i = dayCollection.indexOf(day);
+
+           dayCollection.remove(i);
+       }
+    }
+    
+    
+     public Day getDay(){
+       return dayCollection.get(index);
+    }
+    
+    
 }
