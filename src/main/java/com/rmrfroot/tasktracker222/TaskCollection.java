@@ -16,6 +16,7 @@ public class TaskCollection {
         index = 0;
     }
 
+
     //add a Task object to the Collection
     public void addTask(Task task) {
         taskCollection.add(task);

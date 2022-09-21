@@ -1,3 +1,4 @@
+
 import java.time.DayOfWeek;
 import java.util.*;
 
@@ -6,7 +7,7 @@ public class Day implement Comparable{
     // declare variables
     private DayOfWeek dayOfWeek;
 
-    private int month;
+    private string month;
 
     private int year;
 
@@ -14,7 +15,7 @@ public class Day implement Comparable{
 
 
 
-    private boolean done = false;
+
 
     //constructor
     public Day() {
@@ -24,9 +25,8 @@ public class Day implement Comparable{
 
     }
 
-    public Day(int x , String y ){
+    public Day(int x ){
         dayOfWeek = DayOfWeek.of(x);
-        task = y;
 
         Calendar c = new GregorianCalendar();
         System.out.print(c.getTime());
@@ -47,8 +47,13 @@ public class Day implement Comparable{
     }
 
     //set the month for assigned task
-    public void setMonth(int month) {
-        this.month = month;
+    public void setMonth(String month) {
+
+     if(month.toLowerCase()=="january" ||month.toLowerCase() == "february"  || month.toLowerCase() == "march" ||month.toLowerCase() == "april" ||month.toLowerCase() == "may" || month.toLowerCase() == "june" || month.toLowerCase() == "july" ||month.toLowerCase() == "august"||month.toLowerCase() == "september"||month.toLowerCase() == "october"||month.toLowerCase() == "november"||month.toLowerCase() == "december")
+          this.month = month;
+     else
+         month = "null";
+
     }
 
     //set the year for assigned task
@@ -64,7 +69,7 @@ public class Day implement Comparable{
     }
 
     //get the month
-    public int getMonth(){
+    public String getMonth(){
         return month;
     }
 
@@ -74,5 +79,6 @@ public class Day implement Comparable{
     public DayOfWeek getDayOfWeek() {
         return dayOfWeek;
     }
+
 
 }
