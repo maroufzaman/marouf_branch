@@ -41,9 +41,9 @@ public class TaskCollection {
     }
 
     //get the Task object
-//    public Task getTask() {
-//        return taskCollection.get(index);
-//    }
+    public Task getTask() {
+        return taskCollection.get(index);
+    }
     
     
     

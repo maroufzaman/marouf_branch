@@ -65,5 +65,4 @@ public class DaoServiceImpl implements DaoService {
         daysDAO.save(updatedDay);
         return updatedDay;
     }
-
 }
