@@ -45,4 +45,24 @@ public class DaoServiceImpl implements DaoService {
         daysDAO.deleteById(theId);
     }
 
+    @Override
+    public Day update(int id, Day day) {
+        Optional<Day> result = daysDAO.findById(id);
+        Day updatedDay = null;
+        if(result.isPresent()) {
+            updatedDay = result.get();
+            daysDAO.deleteById(id);
+        }
+        else {
+            //day not found
+            throw new RuntimeException("Did not find day id - " + id);
+        }
+        updatedDay.setId(day.getId());
+        updatedDay.setFirstName(day.getFirstName());
+        updatedDay.setLastName(day.getLastName());
+        updatedDay.setPassword(day.getPassword());
+        updatedDay.setEmail(day.getEmail());
+        daysDAO.save(updatedDay);
+        return updatedDay;
+    }
 }

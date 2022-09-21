@@ -41,7 +41,7 @@ public class DayCollectionController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Day> update(@PathVariable("id") int id, @RequestBody Day day) {
-        return new ResponseEntity<>(daoService.save(day), HttpStatus.OK);
+        return new ResponseEntity<>(daoService.update(id, day), HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")
