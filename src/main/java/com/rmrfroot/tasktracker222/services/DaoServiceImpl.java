@@ -2,7 +2,6 @@ package com.rmrfroot.tasktracker222.services;
 
 import com.rmrfroot.tasktracker222.DAO.DaysDAO;
 import com.rmrfroot.tasktracker222.entities.Day;
-import com.rmrfroot.tasktracker222.entities.Drill;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
