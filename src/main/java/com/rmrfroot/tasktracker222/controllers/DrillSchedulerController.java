@@ -36,7 +36,7 @@ public class DrillSchedulerController {
      * For use by a singular recipient.
      * Only shows drills that are assigned to them.
      */
-    @GetMapping("/private/drill-schedule-recipient")
+    @GetMapping("/drill-schedule-recipient")
     public String drillScheduleRecipient(Model model) {
         List<Drill> drillsToAdd = new ArrayList<>();
         List<Drill> drillsAll = drillDaoService.findAll();

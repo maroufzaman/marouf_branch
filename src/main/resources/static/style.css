@@ -55,7 +55,18 @@ body {
 main {
     margin-left: 5rem;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    height: 100vh;
+}
+
+/* text styling */
+h1 {
+    padding-left: 1rem;
+    color: #1e1e24;
+}
+h2 {
+    padding-left: 1rem;
+    color: #1e1e24;
 }
 
 /* sidebar styling */
@@ -125,35 +136,50 @@ main {
 
 /* TODO: styling divs in main content section*/
 /* TODO: remove background colors as each is completed */
-.top {
-    background: var(--color-primary);
+
+.left {
     display: flex;
-    height: 5rem;
-    position: fixed;
-    margin-left: 5rem;
-    top: 0;
-    width: 100%;
-    border-bottom: solid var(--color-dark) 2px;
-}
-.top-left {
-    background: var(--color-danger);
-    display: flex;
-    align-items: center;
-    padding-left: 1rem;
-    width: 30vw;
+    flex-direction: column;
+    width: 30rem;
     height: 100%;
 }
-.top-right {
-    background: var(--color-warning);
-    display: flex;
+.top-left {
+    background: var(--color-dark-variant);
+    display: flex;    
+    position: fixed;
     align-items: center;
-    padding-left: 1rem;
-    width: 64vw;
+    width: 100%;
+    height: 5rem;
+    border-bottom: solid var(--text-secondary) 2px;
+}
+.bottom-left {
+    background: var(--color-info-light);
+    width: 100%;
     height: 100%;
 }
 
-.bottom {
-    
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.top-right {
+    background: var(--color-info-dark);
+    display: flex;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    border-bottom: solid var(--text-secondary) 2px;
+}
+.bottom-right {
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
 }
 
 /* TODO: write CSS for login page */
