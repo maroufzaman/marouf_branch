@@ -35,9 +35,9 @@ public class DayCollection {
     }
     
     
-//     public Day getDay(){
-//       return dayCollection.get(index);
-//    }
+     public Day getDay(){
+       return dayCollection.get(index);
+    }
     
     
 }
