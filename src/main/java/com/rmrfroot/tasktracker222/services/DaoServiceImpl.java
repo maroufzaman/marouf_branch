@@ -54,8 +54,8 @@ public class DaoServiceImpl implements DaoService {
             daysDAO.deleteById(id);
         }
         else {
-            //drill not found
-            throw new RuntimeException("Did not find drill id - " + id);
+            //day not found
+            throw new RuntimeException("Did not find day id - " + id);
         }
         updatedDay.setId(day.getId());
         updatedDay.setFirstName(day.getFirstName());
