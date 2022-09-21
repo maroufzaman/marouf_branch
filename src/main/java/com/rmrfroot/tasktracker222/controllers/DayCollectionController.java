@@ -16,6 +16,7 @@ import java.util.List;
 @RequestMapping("/dayCollection")
 public class DayCollectionController {
 
+
     @Autowired
     private DaoService daoService;
 
@@ -25,7 +26,6 @@ public class DayCollectionController {
         List<Day> dayList =daoService.findAll();
 
         model.addAttribute("days", dayList);
-
         return "dayCollection";
     }
 
@@ -41,7 +41,7 @@ public class DayCollectionController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Day> update(@PathVariable("id") int id, @RequestBody Day day) {
-        return new ResponseEntity<>(daoService.update(id,day), HttpStatus.OK);
+        return new ResponseEntity<>(daoService.update(id, day), HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")

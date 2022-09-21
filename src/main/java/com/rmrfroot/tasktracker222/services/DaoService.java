@@ -13,7 +13,6 @@ public interface DaoService {
     public Day save(Day day);
 
     public void deleteById(int theId);
-    public Day update(int id, Day day);
 
-
+    Day update(int id, Day day);
 }
