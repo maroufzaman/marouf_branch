@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drill Scheduler</title>
+
+    <!-- material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- sidebar -->
+    <aside class="sidebar">
+        <ul class="sidebar-list">
+            <li class="sidebar-item">
+                <a href="#" class="item-link">
+                    <span class="material-symbols-outlined">visibility</span>
+                    <span class="item-text">Admin/User</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="item-link">
+                    <span class="material-symbols-outlined">edit</span>
+                    <span class="item-text">Edit Event</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="item-link">
+                    <span class="material-symbols-outlined">add</span>
+                    <span class="item-text">New Event</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="item-link">
+                    <span class="material-symbols-outlined">logout</span>
+                    <span class="item-text">Log Out</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- content -->
+    <main>
+        <!-- calendar -->
+        <div class="left">
+            <div class="top-left">
+                <h2>Calendar</h2>
+            </div>
+            <div class="bottom-left">
+
+            </div>
+        </div>
+
+        <!-- agenda/event info -->
+        <div class="right">
+            <div class="top-right">
+                <h1>Agenda</h1>
+            </div>
+            <div class="bottom-right">
+
+            </div>
+        </div>
+
+<!--        This is a preliminary setup of Thymeleaf data access for drill schedule - compatible with both user and manager-->
+<!--        These flags will be changed, moved, and modified as necessary to conform to data display scheme-->
+<!--        <div th:each="drill: ${drills}">-->
+<!--            <span th:text="${drill.title}"></span>-->
+<!--            <span th:text="${drill.startDate}"></span>-->
+<!--            <span th:text="${drill.deadlineDate}"></span>-->
+<!--            <span th:text="${drill.location}"></span>-->
+<!--            <span th:text="${drill.officerName}"></span>-->
+<!--            <span th:text="${drill.officerEmail}"></span>-->
+<!--            <span th:text="${drill.note}"></span>-->
+<!--        </div>-->
+    </main>
+</body>
+</html>

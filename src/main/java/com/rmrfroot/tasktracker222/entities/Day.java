@@ -1,4 +1,4 @@
-package com.rmrfroot.tasktracker222.Entity;
+package com.rmrfroot.tasktracker222.entities;
 
 
 import javax.persistence.*;

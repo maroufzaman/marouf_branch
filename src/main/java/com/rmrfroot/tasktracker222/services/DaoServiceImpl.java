@@ -1,7 +1,7 @@
-package com.rmrfroot.tasktracker222.Service;
+package com.rmrfroot.tasktracker222.services;
 
 import com.rmrfroot.tasktracker222.DAO.DaysDAO;
-import com.rmrfroot.tasktracker222.Entity.Day;
+import com.rmrfroot.tasktracker222.entities.Day;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -35,8 +35,9 @@ public class DaoServiceImpl implements DaoService {
     }
 
     @Override
-    public void save(Day day) {
+    public Day save(Day day) {
         daysDAO.save(day);
+        return day;
     }
 
     @Override
@@ -44,4 +45,24 @@ public class DaoServiceImpl implements DaoService {
         daysDAO.deleteById(theId);
     }
 
+    @Override
+    public Day update(int id, Day day) {
+        Optional<Day> result = daysDAO.findById(id);
+        Day updatedDay = null;
+        if(result.isPresent()) {
+            updatedDay = result.get();
+            daysDAO.deleteById(id);
+        }
+        else {
+            //day not found
+            throw new RuntimeException("Did not find day id - " + id);
+        }
+        updatedDay.setId(day.getId());
+        updatedDay.setFirstName(day.getFirstName());
+        updatedDay.setLastName(day.getLastName());
+        updatedDay.setPassword(day.getPassword());
+        updatedDay.setEmail(day.getEmail());
+        daysDAO.save(updatedDay);
+        return updatedDay;
+    }
 }
