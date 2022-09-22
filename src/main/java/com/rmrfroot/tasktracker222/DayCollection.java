@@ -13,6 +13,7 @@ public class DayCollection {
 
 
 
+
 //Constructor
     public DayCollection() {    //ArrayList
         dayCollection = new ArrayList<Day>();
