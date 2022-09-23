@@ -1,54 +1,122 @@
-package com.rmrfroot.tasktracker222;
+package com.rmrfroot.tasktracker222.entities;
 import java.time.LocalDate;
 import java.util.*;
+import javax.persistence.*;
 
 
+@Entity
+@Table(name="Officer")
 public class Officer {
 
 
 
     //declare variables
+    @Column(name="promotion_eligibility")
     private boolean promotion_eligibility;
+
+    @Column(name="name")
     private String name;
+
+    @Column(name="address")
     private String address;
+
+    @Column(name="Birthday")
     private LocalDate Birthday;
+
+    @Column(name="education")
     private String education;
+
+    @Column(name="hobby")
     private String hobby;
+
+    @Column(name="phone_number")
     private String phone_number;
+
+    @Column(name="contact_info_id")
     private int contact_info_id;
+
+    @Column(name="officer_info_id")
     private int officer_info_id;
+
+    @Column(name="general_info_id")
     private int general_info_id;
 
+    @Column(name="timeline_info_id")
     private int timeline_info_id;
+
+    @Column(name="re_dis_dem_info_id")
     private int re_dis_dem_info_id;
+
+    @Column(name="rank")
     private String rank;
+
+    @Id
+    @GeneratedValue(strategy =GenerationType.IDENTITY)
+    @Column(name="id")
     private int id;
+
+    @Column(name="email")
     private String email;
+
+    @Column(name="hometown")
     private String hometown;
+
+    @Column(name="marital_status")
     private boolean marital_status;
-    private Map<String,String> familyMap;
+
+    @Column(name="awards_annual")
     private String awards_annual;
+
+    @Column(name="awards_pme")
     private String awards_pme;
+
+    @Column(name="award_other")
     private String award_other;
+
+    @Column(name="marital_status")
     private int number_of_department;
+
+    @Column(name="decoration_afam")
     private String decoration_afam;
+
+    @Column(name="decoration_afcm")
     private String  decoration_afcm;
+
+    @Column(name="decoration_msm")
     private String decoration_msm;
+
+    @Column(name="decoration_other")
     private String decoration_other;
+
+    @Column(name="wingman")
     private String wingman;
+
+    @Column(name="professional_timeline_info")
     private String professional_timeline_info;
+
+    @Column(name="marital_status")
     private String personal_timeline_info;
+
+    @Column(name="tafmsd")
     private Date tafmsd;
+
+    @Column(name="das")
     private String das;
+
+    @Column(name="ets")
     private Date ets;
+
+    @Column(name="pet")
     private String pet;
+
+    @Column(name="preferences")
     private String preferences;
 
 
 //constructor
 public  Officer(){
 
-    familyMap = new HashMap<String , String> ();
+
 
 }
 
@@ -339,6 +407,7 @@ public  Officer(){
 
 
     //get officer's id
+    @Id
     public int getId() {
         return id;
     }
@@ -570,21 +639,6 @@ public  Officer(){
 
 
 
-//set the family member names and their relationship with the officer
-    public void setFamilyMap(Map<String, String> familyMap) {
-        this.familyMap = familyMap;
-    }
-
-
-
-
-
-
-
-//get the family member name and their relationship with the officer
-    public Map<String, String> getFamilyMap() {
-        return familyMap;
-    }
 
 
 
@@ -737,7 +791,6 @@ public  Officer(){
     public String getPreferences() {
         return preferences;
     }
-
 
 
 
